@@ -5,6 +5,21 @@ import Card from "../components/Card";
 import FrequentlyAskedQuestions from "../components/FrequentlyAskedQuestions";
 import ContactForm from "../components/ContactForm";
 import Subscribe from "../components/Subscribe";
+import Plans from "../components/Plans";
+
+const scope = [
+  "1 Profile included",
+  "Access to GPM.Mall over 100,000 products up to 35% off",
+  "Access to GPM.Travel for your first night up to 70% off",
+  "Unblock all the Premium features",
+  "Double your savings, access to GPM.Mall over 100,000 products up to 70% off",
+  "Unblock 4 additional Profiles",
+];
+
+const notes = [
+  "+ active profiles fees*",
+  "*&dollar;1 /mo per additional profile",
+];
 
 const Reference = () => {
   return (
@@ -46,6 +61,15 @@ const Reference = () => {
         btnTxt="Get started"
         width={492}
         height={328}
+      />
+      <Plans
+        title="GPM"
+        scope={scope}
+        firstType="Free"
+        secondType="Premium"
+        firstPrice="FREE"
+        secondPrice="5"
+        notes={notes}
       />
       <FrequentlyAskedQuestions />
       <ContactForm />
