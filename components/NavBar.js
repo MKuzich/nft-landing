@@ -10,10 +10,15 @@ const NavBar = () => {
   const { pathname } = useRouter;
   return (
     <nav>
-      <ul>
+      <ul className="flex gap-14">
         {navigation.map(({ id, title, path }) => (
           <li key={id}>
-            <Link href={path}>{title}</Link>
+            <Link
+              className="hover:text-purple-600 font-medium text-white py-2"
+              href={path}
+            >
+              {title}
+            </Link>
           </li>
         ))}
       </ul>

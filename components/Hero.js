@@ -1,10 +1,14 @@
+import Container from "./Container";
+
 const Hero = ({ title, text }) => {
   return (
-    <>
-      <h1>{title}</h1>
-      <p>{text}</p>
-      <button type="button">Get started for free</button>
-    </>
+    <section>
+      <Container>
+        <h1 className="font-black text-6xl inline-block max-w-xl">{title}</h1>
+        <p className="text-2xl">{text}</p>
+        <button type="button">Get started for free</button>
+      </Container>
+    </section>
   );
 };
 
