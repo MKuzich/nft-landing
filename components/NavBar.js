@@ -14,7 +14,7 @@ const NavBar = () => {
         {navigation.map(({ id, title, path }) => (
           <li key={id}>
             <Link
-              className="hover:text-purple-600 font-medium text-white py-2"
+              className="hover:text-purple-600 font-medium text-white py-2 transition-colors duration-300"
               href={path}
             >
               {title}

@@ -1,11 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Poppins:wght@500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .header-gradient-btn {
-  @apply py-2 px-8 box-border border-2 rounded-lg font-bold border-transparent bg-origin-border text-white hover:text-white hover:from-purple-500 hover:via-purple-400 hover:to-purple-500 bg-gradient-to-r from-purple-500 via-indigo-300 to-teal-300;
+  @apply py-2 px-8 box-border border-2 rounded-lg z-30 relative font-bold border-transparent bg-origin-border text-white hover:bg-purple-500 hover:border-purple-500 bg-gradient-to-r from-purple-500 via-indigo-300 to-teal-300 transition-colors duration-300;
 }
 
 .header-btn {
-  @apply py-2 px-8 box-border border-2 rounded-lg font-bold border-purple-400 text-purple-400 bg-transparent hover:text-white hover:bg-purple-500 hover:border-purple-500;
+  @apply py-2 px-8 box-border border-2 rounded-lg z-30 relative font-bold border-purple-400 text-purple-400 bg-transparent hover:text-white hover:bg-purple-500 hover:border-purple-500 transition-all duration-300;
+}
+
+.gradient-btn {
+  @apply py-5 px-6 text-xl box-border border-2 rounded-2xl font-bold border-transparent bg-origin-border text-white  hover:bg-purple-500 hover:border-purple-500 bg-gradient-to-l from-purple-500 via-indigo-300 to-teal-300 transition-colors duration-300;
 }

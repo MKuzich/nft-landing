@@ -1,12 +1,27 @@
 import Image from "next/image";
+import Container from "./Container";
 
-const Invite = ({ path, title, text, btnTxt, width, height }) => {
+//type = left, right, center
+
+const Invite = ({ path, title, text, btnTxt, width, height, type }) => {
   return (
-    <section>
-      <Image src={path} alt={title} width={width} height={height} />
-      <h2>{title}</h2>
-      <p>{text}</p>
-      <button type="button">{btnTxt}</button>
+    <section className="relative py-28">
+      <Container>
+        <div className="flex">
+          <Image
+            className="absolute"
+            src={path}
+            alt={title}
+            width={width}
+            height={height}
+          />
+          <div className="absolute right-0 flex flex-col w-1/2">
+            <h2>{title}</h2>
+            <p>{text}</p>
+            <button type="button">{btnTxt}</button>
+          </div>
+        </div>
+      </Container>
     </section>
   );
 };

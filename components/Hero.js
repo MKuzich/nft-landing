@@ -1,12 +1,33 @@
+import Image from "next/image";
 import Container from "./Container";
+import clientsPhones from "../public/clients-phones.png";
 
-const Hero = ({ title, text }) => {
+const Hero = ({ start, accent, end, text }) => {
   return (
-    <section>
+    <section className="pt-24 pb-48">
       <Container>
-        <h1 className="font-black text-6xl inline-block max-w-xl">{title}</h1>
-        <p className="text-2xl">{text}</p>
-        <button type="button">Get started for free</button>
+        <h1 className="z-30 relative font-black text-6xl inline-block max-w-xl ">
+          {start}
+          <span className="z-30 relative bg-gradient-to-l from-purple-500 via-indigo-300 to-teal-300 bg-clip-text text-transparent">
+            {accent}
+          </span>
+          {end}
+        </h1>
+        <p className="z-30 relative text-2xl py-6 mb-20">{text}</p>
+        <button className="gradient-btn z-30 relative" type="button">
+          Get started for free
+        </button>
+        <Image
+          src={clientsPhones}
+          alt="Clients"
+          width={903}
+          height={832}
+          className="absolute -bottom-48 right-0 z-10"
+        />
+        <div className="absolute -bottom-48 w-full h-60 bg-gradient-to-t from-slate-900 via-slate-900/90 to-transparent z-20"></div>
+
+        <div className="absolute left-0 -top-24 w-1/3 rounded-full h-full blur-2xl bg-gradient-to-b via-teal-300/30 from-purple-300/30 to-transparent"></div>
+        <div className="absolute right-20 bottom-0 w-1/3 rounded-full h-full blur-2xl bg-gradient-to-t to-teal-300/30 from-purple-300/30 "></div>
       </Container>
     </section>
   );
