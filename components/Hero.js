@@ -14,7 +14,7 @@ const Hero = ({ start, accent, end, text }) => {
           {end}
         </h1>
         <p className="z-30 relative text-2xl py-6 mb-20">{text}</p>
-        <button className="gradient-btn z-30 relative" type="button">
+        <button className="gradient-btn" type="button">
           Get started for free
         </button>
         <Image

@@ -11,6 +11,10 @@ module.exports = {
         main: ["Poppins"],
         secondary: ["Montserrat"],
       },
+      fontSize: {
+        titles: ["2.5rem", { lineHeight: "3.125rem" }],
+        tagline: ["2.25rem", { lineHeight: "2.875rem" }],
+      },
     },
     screens: {
       tablet: "768px",

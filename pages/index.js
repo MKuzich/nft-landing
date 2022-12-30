@@ -7,6 +7,11 @@ import FrequentlyAskedQuestions from "../components/FrequentlyAskedQuestions";
 import ContactForm from "../components/ContactForm";
 import Subscribe from "../components/Subscribe";
 import threePhones from "../public/three-phones.png";
+import dashboard from "../public/dashboard.png";
+import statistic from "../public/statistic.png";
+import sea from "../public/sea.png";
+import grut from "../public/grut.png";
+import welcomeScr from "../public/welcome-screen.png";
 
 export default function Home() {
   return (
@@ -28,51 +33,73 @@ export default function Home() {
         title="Create your personal or business profile in less than two minutes."
         text="Create a profile for free and start enjoying a range of benefits! Our platform provides a social network exclusively for users, giving you the opportunity to connect with like-minded professionals end expand your network. You will also be able to access exclusive discounts on selected products."
         btnTxt="Get started for free"
-        width={983}
+        width={925}
         height={580}
         type="right"
-      />
+        imgPosition="left-0 -top-8"
+      >
+        <div className="absolute -right-20 -top-44 w-1/3 rounded-full h-full blur-2xl bg-gradient-to-r via-teal-300/30 from-purple-300/40 to-transparent"></div>
+        <div className="absolute -right-32 top-96 w-2/3 rounded-full h-full blur-3xl bg-gradient-to-b to-purple-300/20 from-purple-300/20 "></div>
+      </Invite>
       <Card text="Get an NFC card and link it to your profile. We plant a tree for each card!" />
       <Invite
-        path="/"
+        path={dashboard}
         title="Experience effortless team management."
         text="Make managing your team easier than ever with one dashboard - all in one place!
 Discover our white label CRM system for teams and companies that includes powerful statistics and social network capabilities. Customize features to fit the specific needs of your team. This offers the flexibility and convenience of a powerful CRM system without having to build it from scratch."
         btnTxt="Get started"
-        width={1024}
+        width={935}
         height={615}
-      />
+        type="left"
+        imgPosition="right-0 -top-16"
+      >
+        <div className="absolute -right-20 -top-80 w-1/3 rounded-full h-full blur-3xl bg-gradient-to-r to-teal-300/30 from-purple-300/40"></div>
+      </Invite>
       <Invite
-        path="/"
+        path={statistic}
         title="Get up to 70% discount on selected products."
         text="Register now and take advantage of numerous discounted products. By signing up, you'll have access to exclusive offers and be able to earn points by purchasing products or simply by being an active member. Unlock even better deals when you reach higher loyalty levels and enjoy the rewards of being a valued customer."
         btnTxt="Get started for free"
-        width={234}
-        height={314}
-      />
+        width={923}
+        height={555}
+        type="center"
+        imgPosition="left-0 top-0"
+      >
+        <div className="absolute -right-20 -bottom-96 w-1/3 rounded-full h-full blur-3xl bg-gradient-to-tr  from-purple-300/30 to-teal-300/40"></div>
+        <div className="absolute left-48 top-20 w-1/3 rounded-full h-96 blur-3xl bg-teal-300/40"></div>
+        <div className="absolute -left-96 -top-full -rotate-45 w-full rounded-3xl h-full blur-3xl bg-gradient-to-b to-purple-300/20 from-purple-300/20 "></div>
+      </Invite>
       <Invite
-        path="/"
+        path={sea}
         title="Over 2M hotels worldwide, up to 70% off!"
         text="Take advantage of GPM.Travel now and get up to 70% off for your next stay. With an extensive selection of more than 2M hotels and resorts around the world, you'll be able to find the ideal destination for your next holiday! Register now and start making the most of your vacation with GPM.Travel!"
         btnTxt="Get started for free"
-        width={477}
-        height={259}
+        width={506}
+        height={334}
+        type="left"
+        imgPosition="right-40 top-16"
       />
       <Invite
-        path="/"
+        path={grut}
         title="Go further - get an NFT that gives you up to 300% per year!"
         text="Discover our NFT collection designed to provide up to 1000% return on your investment annually. With NFTs, you can experience true ownership of digital assets and have the opportunity to maximize your profits with referrals. Have some fun and laverage on the potential of NFTs!"
         btnTxt="Learn more"
-        width={368}
-        height={231}
-      />
+        width={430}
+        height={429}
+        type="center"
+        imgPosition="top-40 left-56"
+      >
+        <div className="absolute -left-96 -top-full -rotate-45 w-2/3 rounded-full h-full blur-3xl bg-gradient-to-t to-teal-300/20 from-purple-300/20 "></div>
+        <div className="absolute -right-96 -bottom-20 -rotate-45 w-2/3 rounded-full h-full blur-3xl bg-gradient-to-b to-teal-300/20 from-purple-300/20 "></div>
+      </Invite>
       <Invite
-        path="/"
+        path={welcomeScr}
         title="Become a reseller and start earning now."
         text="Become a GPM.Team reseller by launching your own branded Digital Business Card Platform for Businesses & Teams in days and start earning up to 65% on your customers' subscriptions and up to 35% on customers' product purchases."
         btnTxt="Learn more"
         width={588}
         height={285}
+        type="full-centered"
       />
       <Roadmap />
       <FrequentlyAskedQuestions />
