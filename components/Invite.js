@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Container from "./Container";
 
-//type = left, right, center, full-centered
-
 const Invite = ({
   path,
   title,
@@ -15,11 +13,15 @@ const Invite = ({
   children,
 }) => {
   return (
-    <section className="relative py-28">
+    <section className="relative py-20">
       <Container>
         <div className="flex flex-col items-center">
           {(type === "center" || type === "full-centered") && (
-            <h2 className="font-extrabold text-titles mb-12 inline-block w-1/2">
+            <h2
+              className={`font-extrabold text-titles mb-12 inline-block w-1/2 ${
+                type === "full-centered" && "text-center"
+              }`}
+            >
               {title}
             </h2>
           )}
@@ -42,7 +44,13 @@ const Invite = ({
               {(type === "left" || type === "right") && (
                 <h2 className="font-extrabold text-titles">{title}</h2>
               )}
-              <p className="flex w-5/6 text-center">{text}</p>
+              <p
+                className={`flex w-5/6 ${
+                  type === "full-centered" && "text-center"
+                }`}
+              >
+                {text}
+              </p>
               {type === "full-centered" && (
                 <Image
                   className={`z-10 ${imgPosition}`}

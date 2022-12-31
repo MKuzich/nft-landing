@@ -29,7 +29,7 @@ const Header = () => {
           </div>
           <div className="flex gap-7 items-center">
             <button type="button">
-              <Image src={english} alt="lenguage" width={33} height={24} />
+              <Image src={english} alt="language" width={33} height={24} />
             </button>
             <button
               className="z-20 p-0 object-cover h-6"

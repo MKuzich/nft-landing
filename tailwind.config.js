@@ -15,6 +15,16 @@ module.exports = {
         titles: ["2.5rem", { lineHeight: "3.125rem" }],
         tagline: ["2.25rem", { lineHeight: "2.875rem" }],
       },
+      colors: {
+        location1: "#7EFFC1",
+        location2: "#FFAA5B",
+        location3: "#A689FB",
+        location4: "#FDEC59",
+        location5: "#638FFF",
+      },
+      spacing: {
+        spec: "82px",
+      },
     },
     screens: {
       tablet: "768px",

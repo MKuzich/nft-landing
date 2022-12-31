@@ -1,3 +1,6 @@
+import Container from "./Container";
+import Question from "./Question";
+
 const questions = [
   {
     title: "Question 1",
@@ -19,16 +22,16 @@ const questions = [
 
 const FrequentlyAskedQuestions = () => {
   return (
-    <section>
-      <h2>FAQ</h2>
-      <ul>
-        {questions.map(({ title, text }) => (
-          <li key={title}>
-            <h3>{title}</h3>
-            <p>{text}</p>
-          </li>
-        ))}
-      </ul>
+    <section className="py-20">
+      <Container>
+        <h2 className="font-extrabold text-titles mb-12">FAQ</h2>
+        <ul className="flex flex-col gap-7">
+          {questions.map(({ title, text }) => (
+            <Question key={title} title={title} text={text} />
+          ))}
+        </ul>
+        <div className="absolute right-0 top-0 w-1/4 rounded-full h-96 blur-3xl bg-gradient-to-br to-teal-300/50 from-purple-300/60"></div>
+      </Container>
     </section>
   );
 };
