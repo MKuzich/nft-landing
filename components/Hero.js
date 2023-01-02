@@ -6,23 +6,21 @@ const Hero = ({ start, accent, end, text }) => {
   return (
     <section className="pt-24 pb-48">
       <Container>
-        <h1 className="z-30 relative font-black text-6xl inline-block max-w-xl ">
+        <h1 className="z-10 relative font-black text-6xl inline-block max-w-xl ">
           {start}
-          <span className="z-30 relative bg-gradient-to-l from-purple-500 via-indigo-300 to-teal-300 bg-clip-text text-transparent">
+          <span className="relative bg-gradient-to-l from-purple-500 via-indigo-300 to-teal-300 bg-clip-text text-transparent">
             {accent}
           </span>
           {end}
         </h1>
-        <p className="z-30 relative text-2xl py-6 mb-20">{text}</p>
+        <p className="z-10 relative text-2xl py-6 mb-20">{text}</p>
         <button className="gradient-btn" type="button">
           Get started for free
         </button>
         <Image
           src={clientsPhones}
           alt="Clients"
-          width={903}
-          height={832}
-          className="absolute -bottom-48 right-0 z-10"
+          className="absolute -bottom-48 right-0 z-1"
         />
         <div className="absolute -bottom-48 w-full h-60 bg-gradient-to-t from-slate-900 via-slate-900/90 to-transparent z-20"></div>
 
