@@ -25,6 +25,8 @@ module.exports = {
       spacing: {
         spec: "82px",
         drop: "32rem",
+        "tablet-language": "19.875rem",
+        "desktop-language": "49.625rem",
       },
     },
     screens: {

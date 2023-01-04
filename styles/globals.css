@@ -11,12 +11,16 @@
   @apply mb-2 flex gap-4 items-center w-full h-14 rounded-md z-30 relative bg-slate-900 px-5 text-base;
 }
 
-.drop-down {
-  @apply tablet:absolute tablet:top-12 tablet:left-0 tablet:p-2 tablet:w-drop bg-slate-800;
+.drop-down-menu {
+  @apply z-50 rounded-b-xl tablet:absolute tablet:top-20 tablet:left-20 desktop:left-72 tablet:p-2 tablet:w-drop bg-slate-800;
+}
+
+.drop-down-language {
+  @apply z-50 rounded-b-xl tablet:absolute tablet:top-20 tablet:left-tablet-language desktop:left-desktop-language p-6 bg-slate-800;
 }
 
 .drop-down-link {
-  @apply flex gap-4 items-center w-full h-10 rounded-md z-30 relative bg-slate-900 px-5 text-sm;
+  @apply flex gap-4 items-center w-full h-12 rounded-md z-30 relative hover:text-purple-600 transition-colors duration-300 bg-slate-900 px-5 text-sm;
 }
 
 .header-gradient-btn {

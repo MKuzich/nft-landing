@@ -5,22 +5,13 @@ import logo from "../public/logo.png";
 import dark from "../public/dark.png";
 import light from "../public/light.png";
 import english from "../public/english.png";
-import spanish from "../public/spanish.png";
-import french from "../public/french.png";
 import title from "../public/title.png";
 import NavBar from "./NavBar";
 import Container from "./Container";
 
-const languages = [
-  { title: "english", flag: english },
-  { title: "french", flag: french },
-  { title: "spanish", flag: spanish },
-];
-
-const Header = () => {
+const Header = ({ toggleDropDownMenu, toggleLanguageSelection, languages }) => {
   const [isDark, setIsDark] = useState(true);
   const [isShowMenu, setIsShowMenu] = useState(false);
-  const [language, setLanguage] = useState("english");
 
   const toggleThemeStyle = () => {
     const page = document.querySelector("html");
@@ -72,14 +63,18 @@ const Header = () => {
             <Image src={title} alt="Company title" width={120} height={22} />
           </Link>
 
-          <div className="tablet:flex gap-16 items-center hidden">
+          <div className="tablet:flex tablet:gap-8 desktop:gap-16 items-center hidden">
             <Link href="/">
               <Image src={logo} alt="Logo" width={45} height={45} />
             </Link>
-            <NavBar type="tablet" />
+            <NavBar type="tablet" toggleDropDownMenu={toggleDropDownMenu} />
           </div>
-          <div className="flex gap-7 items-center">
-            <button type="button" className="hidden tablet:block">
+          <div className="flex tablet:gap-5 desktop:gap-7 items-center">
+            <button
+              onClick={toggleLanguageSelection}
+              type="button"
+              className="hidden tablet:block"
+            >
               <Image src={english} alt="language" width={33} height={24} />
             </button>
             <button
@@ -108,7 +103,7 @@ const Header = () => {
 
         {isShowMenu && (
           <div className="fixed px-4 pt-2 pb-14 top-0 left-0 z-20 w-screen h-screen bg-slate-700">
-            <div className=" bg-slate-900 rounded-xl h-full flex flex-col items-center">
+            <div className="bg-slate-900 rounded-xl h-full flex flex-col items-center">
               <div className="flex items-center justify-between w-full pt-5 px-3 mb-12">
                 <button type="button" onClick={toggleMenuButton}>
                   <svg

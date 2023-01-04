@@ -17,24 +17,24 @@ const navigation = [
   { id: 6, title: "GPM Reseller", path: "/", icon: resellerIcon },
 ];
 
-const NavBar = ({ type, toggleMenuButton }) => {
+const NavBar = ({ type, toggleMenuButton, toggleDropDownMenu }) => {
   const [isOpenDropDown, setIsOpenDropDown] = useState(false);
 
   const onClickHandler = () => {
+    if (type !== "mobile") return;
     const productsList = document.querySelector(`#products${type}`);
     productsList.classList.toggle("hidden");
-    productsList.classList.toggle("drop-down");
     setIsOpenDropDown(!isOpenDropDown);
   };
 
   return (
-    <nav className="relative w-full flex flex-col tablet:flex-row tablet:gap-14 tablet:items-center px-8 tablet:px-0">
+    <nav className="relative w-full flex flex-col tablet:flex-row tablet:gap-6 desktop:gap-14 tablet:items-center px-8 tablet:px-0">
       <button
         className={`${
           type === "mobile" ? "nav-link-mobile" : "nav-link-tablet"
         } justify-between`}
         type="button"
-        onClick={onClickHandler}
+        onClick={type === "mobile" ? onClickHandler : toggleDropDownMenu}
       >
         Products
         {isOpenDropDown ? (
@@ -93,7 +93,6 @@ const NavBar = ({ type, toggleMenuButton }) => {
           ))}
         </ul>
       </div>
-
       <Link
         className={`${
           type === "mobile" ? "nav-link-mobile" : "nav-link-tablet"
