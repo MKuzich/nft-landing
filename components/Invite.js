@@ -13,12 +13,12 @@ const Invite = ({
   children,
 }) => {
   return (
-    <section className="relative py-20">
+    <section className="relative py-10 tablet:py-16 desktop:py-20">
       <Container>
         <div className="flex flex-col items-center">
           {(type === "center" || type === "full-centered") && (
             <h2
-              className={`font-extrabold text-titles mb-12 inline-block w-1/2 ${
+              className={`font-extrabold text-2xl tablet:text-3xl desktop:text-titles mb-12 inline-block w-1/2 ${
                 type === "full-centered" && "text-center"
               }`}
             >
@@ -27,7 +27,7 @@ const Invite = ({
           )}
           {type !== "full-centered" && (
             <Image
-              className={`absolute z-10 ${imgPosition}`}
+              className={`tablet:absolute z-10 ${imgPosition}`}
               src={path}
               alt={title}
               width={width}
@@ -37,17 +37,19 @@ const Invite = ({
           <div className={`flex ${type === "left" && "flex-row-reverse"}`}>
             {type !== "full-centered" && <div className="w-1/2 h-full"></div>}
             <div
-              className={`flex flex-col gap-12 items-start z-30 ${
+              className={`flex flex-col gap-6 tablet:gap-8 desktop:gap-12 items-start z-30 ${
                 type === "full-centered" ? "w-full items-center" : "w-1/2"
               }`}
             >
               {(type === "left" || type === "right") && (
-                <h2 className="font-extrabold text-titles">{title}</h2>
+                <h2 className="font-extrabold text-2xl tablet:text-3xl desktop:text-titles">
+                  {title}
+                </h2>
               )}
               <p
                 className={`flex w-5/6 ${
                   type === "full-centered" && "text-center"
-                }`}
+                } text-sm tablet:text-base desktop:text-lg`}
               >
                 {text}
               </p>

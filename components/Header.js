@@ -73,7 +73,7 @@ const Header = ({ toggleDropDownMenu, toggleLanguageSelection, languages }) => {
             <button
               onClick={toggleLanguageSelection}
               type="button"
-              className="hidden tablet:block"
+              className="hidden tablet:block rounded-full overflow-hidden"
             >
               <Image src={english} alt="language" width={33} height={24} />
             </button>

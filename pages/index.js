@@ -36,7 +36,7 @@ export default function Home() {
         width={925}
         height={580}
         type="right"
-        imgPosition="left-0 -top-8"
+        imgPosition="desktop:left-0 desktop:-top-8"
       >
         <div className="absolute -right-20 -top-44 w-1/3 rounded-full h-full blur-2xl bg-gradient-to-r via-teal-300/30 from-purple-300/40 to-transparent"></div>
         <div className="absolute -right-32 top-96 w-2/3 rounded-full h-full blur-3xl bg-gradient-to-b to-purple-300/20 from-purple-300/20 "></div>
