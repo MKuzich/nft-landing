@@ -3,11 +3,11 @@ import Container from "./Container";
 
 const Invite = ({
   path,
+  pathMob,
+  picOrder = 2,
   title,
   text,
   btnTxt,
-  width,
-  height,
   type,
   imgPosition,
   children,
@@ -18,51 +18,75 @@ const Invite = ({
         <div className="flex flex-col items-center">
           {(type === "center" || type === "full-centered") && (
             <h2
-              className={`font-extrabold text-2xl tablet:text-3xl desktop:text-titles mb-12 inline-block w-1/2 ${
-                type === "full-centered" && "text-center"
-              }`}
+              className={`ewrwfsdfdsfds ${
+                picOrder === 4 && "mb-6"
+              } tablet:mb-8 desktop:mb-12 font-extrabold text-2xl tablet:text-3xl desktop:text-titles desktop:mp-12 inline-block desktop:w-8/12 text-center`}
             >
               {title}
             </h2>
           )}
           {type !== "full-centered" && (
             <Image
-              className={`tablet:absolute z-10 ${imgPosition}`}
+              className={`hidden desktop:block tablet:absolute z-10 ${imgPosition}`}
               src={path}
               alt={title}
-              width={width}
-              height={height}
             />
           )}
           <div className={`flex ${type === "left" && "flex-row-reverse"}`}>
-            {type !== "full-centered" && <div className="w-1/2 h-full"></div>}
+            {type !== "full-centered" && (
+              <div
+                className={`${
+                  type !== "center" && "pt-16"
+                } hidden tablet:flex items-center w-1/2 h-full`}
+              >
+                <Image
+                  className="desktop:hidden relative z-10"
+                  src={pathMob}
+                  alt={title}
+                />
+              </div>
+            )}
             <div
-              className={`flex flex-col gap-6 tablet:gap-8 desktop:gap-12 items-start z-30 ${
-                type === "full-centered" ? "w-full items-center" : "w-1/2"
+              className={`flex flex-col items-center tablet:gap-8 desktop:gap-12 z-30 ${
+                type === "full-centered"
+                  ? "w-full items-center"
+                  : "tablet:w-1/2 tablet:items-start"
               }`}
             >
               {(type === "left" || type === "right") && (
-                <h2 className="font-extrabold text-2xl tablet:text-3xl desktop:text-titles">
+                <h2
+                  className={`${
+                    picOrder === 4 && "mb-6"
+                  } tablet:mb-0 font-extrabold text-center tablet:text-start text-2xl tablet:text-3xl desktop:text-titles`}
+                >
                   {title}
                 </h2>
               )}
               <p
-                className={`flex w-5/6 ${
+                className={`${
+                  picOrder === 2 && "mb-6"
+                } tablet:mb-0 flex text-center tablet:text-${
+                  type === "full-centered" ? "center" : "start"
+                } order-3 tablet:w-5/6 ${
                   type === "full-centered" && "text-center"
                 } text-sm tablet:text-base desktop:text-lg`}
               >
                 {text}
               </p>
+
               {type === "full-centered" && (
                 <Image
-                  className={`z-10 ${imgPosition}`}
+                  className={`hidden tablet:block order-${picOrder} z-10`}
                   src={path}
                   alt={title}
-                  width={width}
-                  height={height}
                 />
               )}
-              <button className="gradient-btn" type="button">
+              <Image
+                className={`tablet:hidden relative z-10 order-${picOrder}`}
+                src={pathMob}
+                alt={title}
+              />
+              <button className="gradient-btn order-5" type="button">
                 {btnTxt}
               </button>
             </div>

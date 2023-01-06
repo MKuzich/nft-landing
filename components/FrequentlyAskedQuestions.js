@@ -22,9 +22,11 @@ const questions = [
 
 const FrequentlyAskedQuestions = () => {
   return (
-    <section className="py-20">
+    <section className="py-8 tablet:py-12 desktop:py-20">
       <Container>
-        <h2 className="font-extrabold text-titles mb-12">FAQ</h2>
+        <h2 className="text-center desktop:text-start font-extrabold text-2xl tablet:text-3xl desktop:text-titles mb-8 tablet:mb-10 desktop:mb-12">
+          FAQ
+        </h2>
         <ul className="flex flex-col gap-7">
           {questions.map(({ title, text }) => (
             <Question key={title} title={title} text={text} />

@@ -23,10 +23,17 @@ module.exports = {
         location5: "#638FFF",
       },
       spacing: {
-        spec: "82px",
+        18: "4.625rem",
+        19: "4.875rem",
+        21: "5.125rem",
+        "submit-btn-mob": "0.625rem",
         drop: "32rem",
         "tablet-language": "19.875rem",
         "desktop-language": "49.625rem",
+        "road-mobile": "674px",
+        "road-picture-mobile": "594px",
+        22: "5.5rem",
+        23: "5.825rem",
       },
     },
     screens: {

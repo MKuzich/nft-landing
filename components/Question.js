@@ -9,9 +9,13 @@ const Question = ({ title, text }) => {
   return (
     <li>
       <div className="flex items-start">
-        <div className="flex flex-col gap-6 w-11/12">
-          <h3 className="font-extrabold text-2xl">{title}</h3>
-          {isOpen && <p className="text-base">{text}</p>}
+        <div className="flex flex-col gap-3 tablet:gap-4 desktop:gap-6 w-11/12">
+          <h3 className="font-extrabold text-base tablet:text-xl desktop:text-2xl">
+            {title}
+          </h3>
+          {isOpen && (
+            <p className="text-xs tablet:text-sm desktop:text-base">{text}</p>
+          )}
         </div>
         <button className="relative z-20" type="button" onClick={onClickToggle}>
           {isOpen ? (
@@ -47,7 +51,7 @@ const Question = ({ title, text }) => {
           )}
         </button>
       </div>
-      <div className="bg-gradient-to-l from-transparent via-white/60 to-transparent h-0.5 mt-7"></div>
+      <div className="bg-gradient-to-l from-transparent via-white/60 to-transparent h-0.5 mt-4 tablet:mt-5 desktop:mt-7"></div>
     </li>
   );
 };

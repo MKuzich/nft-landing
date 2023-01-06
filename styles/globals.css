@@ -36,15 +36,15 @@
 }
 
 .invite-input {
-  @apply w-full font-medium text-base py-4 px-8 rounded-md bg-slate-700 outline-none;
+  @apply w-full font-medium text-xs tablet:text-sm desktop:text-base py-3 desktop:py-4 px-5 desktop:px-8 rounded-md bg-slate-700 outline-none;
 }
 
 .subscribe-input {
-  @apply w-full font-medium text-base py-2 px-0 rounded-md bg-slate-700 outline-none;
+  @apply w-5/6 desktop:w-11/12 font-medium text-xs tablet:text-sm desktop:text-base py-2 px-0 rounded-md bg-slate-700 outline-none;
 }
 
 .subscribe-btn {
-  @apply z-30 absolute bottom-10 -right-4 py-3 px-9 text-base box-border border-2 rounded-l-lg font-bold border-transparent bg-origin-border text-white hover:border-indigo-500 bg-gradient-to-l from-indigo-400 to-teal-300 transition-colors duration-300;
+  @apply z-30 absolute bottom-10 -right-4 py-2 desktop:py-3 px-5 tablet:px-7 desktop:px-9 text-base box-border border-2 rounded-l-lg font-bold border-transparent bg-origin-border text-white hover:border-indigo-500 bg-gradient-to-l from-indigo-400 to-teal-300 transition-colors duration-300;
 }
 
 .footer-title {
@@ -56,5 +56,5 @@
 }
 
 .footer-category-item {
-  @apply font-medium font-secondary text-base mb-3;
+  @apply font-medium font-secondary text-base;
 }

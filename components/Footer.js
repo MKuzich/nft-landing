@@ -18,7 +18,7 @@ const Footer = () => (
         <div className="footer-category">
           <h2 className="footer-title">Language</h2>
           <div className="flex items-center gap-3">
-            <button type="button">
+            <button className="rounded-full overflow-hidden" type="button">
               <Image src={english} alt="language" width={33} height={24} />
             </button>
             <span className="footer-category-item">English</span>
@@ -49,7 +49,7 @@ const Footer = () => (
           <h2 className="footer-title">App</h2>
         </div>
       </div>
-      <p className="text-center mt-20 text-white/70">
+      <p className="text-center mt-20 text-white/70 text-xs teblet:text-sm desktop:text-base">
         Copyright &copy; 2022 All rights reserved - Gopop.me
       </p>
     </Container>

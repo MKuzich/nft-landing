@@ -21,7 +21,7 @@ const Hero = ({ start, accent, end, text }) => {
           <button className="gradient-btn" type="button">
             Get started for free
           </button>
-          <picture className="absolute tablet:w-11/12 desktop:w-auto -bottom-11 tablet:-bottom-80 desktop:-bottom-48 left-auto right-auto tablet:right-0 z-10">
+          <picture className="absolute tablet:w-11/12 desktop:w-auto -bottom-11 tablet:-bottom-80 desktop:-bottom-48 left-auto right-auto tablet:right-0 z-10 pointer-events-none">
             <source srcSet={clientsPhones.src} media="(min-width: 768px)" />
             <img
               src={clientPhonesMobile.src}
