@@ -13,7 +13,7 @@ const Card = ({ text }) => {
           style={{ backgroundImage: `url(${trees.src})` }}
         >
           <Container>
-            <div className="relative pt-4 pb-5 px-7 desktop:py-12 desktop:pl-20 desktop:pr-96 z-10 bg-slate-900 rounded-xl">
+            <div className="relative pt-4 pb-5 px-7 desktop:py-12 desktop:pl-20 desktop:pr-96 z-10 bg-white/90 dark:bg-slate-900 rounded-xl">
               <p className="text-center desktop:text-start text-base desktop:text-tagline font-extrabold">
                 {text}
               </p>

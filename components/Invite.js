@@ -7,8 +7,8 @@ const Invite = ({
   picOrder = 2,
   title,
   text,
-  btnTxt,
-  type,
+  btnTxt = "Get started for free",
+  type = "left",
   imgPosition,
   children,
 }) => {
@@ -18,7 +18,7 @@ const Invite = ({
         <div className="flex flex-col items-center">
           {(type === "center" || type === "full-centered") && (
             <h2
-              className={`ewrwfsdfdsfds ${
+              className={`${
                 picOrder === 4 && "mb-6"
               } tablet:mb-8 desktop:mb-12 font-extrabold text-2xl tablet:text-3xl desktop:text-titles desktop:mp-12 inline-block desktop:w-8/12 text-center`}
             >
@@ -65,11 +65,9 @@ const Invite = ({
               <p
                 className={`${
                   picOrder === 2 && "mb-6"
-                } tablet:mb-0 flex text-center tablet:text-${
-                  type === "full-centered" ? "center" : "start"
-                } order-3 tablet:w-5/6 ${
-                  type === "full-centered" && "text-center"
-                } text-sm tablet:text-base desktop:text-lg`}
+                } tablet:mb-0 flex text-center ${
+                  type === "full-centered" ? "text-center" : "start"
+                } order-3 tablet:w-5/6 text-sm tablet:text-base desktop:text-lg`}
               >
                 {text}
               </p>

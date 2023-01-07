@@ -40,7 +40,6 @@ export default function Home() {
         picOrder={4}
         title="Create your personal or business profile in less than two minutes."
         text="Create a profile for free and start enjoying a range of benefits! Our platform provides a social network exclusively for users, giving you the opportunity to connect with like-minded professionals end expand your network. You will also be able to access exclusive discounts on selected products."
-        btnTxt="Get started for free"
         type="right"
         imgPosition="desktop:left-0 desktop:-top-8"
       >
@@ -55,7 +54,6 @@ export default function Home() {
         text="Make managing your team easier than ever with one dashboard - all in one place!
 Discover our white label CRM system for teams and companies that includes powerful statistics and social network capabilities. Customize features to fit the specific needs of your team. This offers the flexibility and convenience of a powerful CRM system without having to build it from scratch."
         btnTxt="Get started"
-        type="left"
         imgPosition="right-0 -top-16"
       >
         <div className="absolute -right-20 -top-80 w-1/3 rounded-full h-full blur-3xl bg-gradient-to-r to-teal-300/30 from-purple-300/40"></div>
@@ -65,7 +63,6 @@ Discover our white label CRM system for teams and companies that includes powerf
         pathMob={discountMob}
         title="Get up to 70% discount on selected products."
         text="Register now and take advantage of numerous discounted products. By signing up, you'll have access to exclusive offers and be able to earn points by purchasing products or simply by being an active member. Unlock even better deals when you reach higher loyalty levels and enjoy the rewards of being a valued customer."
-        btnTxt="Get started for free"
         type="center"
         imgPosition="left-56 top-28"
       >
@@ -78,8 +75,6 @@ Discover our white label CRM system for teams and companies that includes powerf
         pathMob={seaMob}
         title="Over 2M hotels worldwide, up to 70% off!"
         text="Take advantage of GPM.Travel now and get up to 70% off for your next stay. With an extensive selection of more than 2M hotels and resorts around the world, you'll be able to find the ideal destination for your next holiday! Register now and start making the most of your vacation with GPM.Travel!"
-        btnTxt="Get started for free"
-        type="left"
         imgPosition="right-40 top-16"
       />
       <Invite

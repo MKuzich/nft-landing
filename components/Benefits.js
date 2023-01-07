@@ -22,7 +22,7 @@ const Benefits = () => {
       <ul>
         {benefits.map(({ title, text }) => (
           <li key={title}>
-            <Image src="/" alt="benefit" width={78} height={78} />
+            <Image src="/" alt="Benefits" width={78} height={78} />
             <h3>{title}</h3>
             <p>{text}</p>
           </li>

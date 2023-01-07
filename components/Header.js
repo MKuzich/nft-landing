@@ -33,7 +33,7 @@ const Header = ({ toggleDropDownMenu, toggleLanguageSelection, languages }) => {
 
   return (
     <header
-      className={`relative z-10 pt-7 bg-gradient-to-r from-gray-900/20 via-gray-900 to-gray-900/20 ${
+      className={`relative z-10 pt-7 dark:bg-gradient-to-r from-gray-900/20 via-gray-900 to-gray-900/20 ${
         isShowMenu && "w-screen h-screen"
       }`}
     >
@@ -65,7 +65,7 @@ const Header = ({ toggleDropDownMenu, toggleLanguageSelection, languages }) => {
 
           <div className="tablet:flex tablet:gap-8 desktop:gap-16 items-center hidden">
             <Link href="/">
-              <Image src={logo} alt="Logo" width={45} height={45} />
+              <Image src={logo} alt="Logo" className="flex max-w-none" />
             </Link>
             <NavBar type="tablet" toggleDropDownMenu={toggleDropDownMenu} />
           </div>

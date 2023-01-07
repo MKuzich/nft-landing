@@ -107,7 +107,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="text-center mt-20 text-white/70 text-xs teblet:text-sm desktop:text-base">
+        <p className="text-center mt-20 text-black/70 dark:text-white/70 text-xs teblet:text-sm desktop:text-base">
           Copyright &copy; 2022 All rights reserved - Gopop.me
         </p>
       </Container>

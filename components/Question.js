@@ -51,7 +51,7 @@ const Question = ({ title, text }) => {
           )}
         </button>
       </div>
-      <div className="bg-gradient-to-l from-transparent via-white/60 to-transparent h-0.5 mt-4 tablet:mt-5 desktop:mt-7"></div>
+      <div className="bg-gradient-to-l from-transparent via-black/60 dark:via-white/60 to-transparent h-0.5 mt-4 tablet:mt-5 desktop:mt-7"></div>
     </li>
   );
 };

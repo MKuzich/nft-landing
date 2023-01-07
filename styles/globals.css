@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .nav-link-tablet {
-  @apply mb-0 w-auto flex-row rounded-none hover:text-purple-600 font-medium text-white py-2 transition-colors duration-300;
+  @apply mb-0 w-auto flex-row rounded-none hover:text-purple-600 font-medium dark:text-white py-2 transition-colors duration-300;
 }
 
 .nav-link-mobile {
@@ -36,11 +36,11 @@
 }
 
 .invite-input {
-  @apply w-full font-medium text-xs tablet:text-sm desktop:text-base py-3 desktop:py-4 px-5 desktop:px-8 rounded-md bg-slate-700 outline-none;
+  @apply w-full shadow-lg font-medium text-xs tablet:text-sm desktop:text-base py-3 desktop:py-4 px-5 desktop:px-8 rounded-md bg-white/90 dark:bg-slate-700 outline-none;
 }
 
 .subscribe-input {
-  @apply w-5/6 desktop:w-11/12 font-medium text-xs tablet:text-sm desktop:text-base py-2 px-0 rounded-md bg-slate-700 outline-none;
+  @apply w-5/6 desktop:w-11/12 font-medium text-xs tablet:text-sm desktop:text-base py-2 px-0 rounded-md bg-transparent dark:bg-slate-700 outline-none;
 }
 
 .subscribe-btn {
@@ -56,5 +56,5 @@
 }
 
 .footer-category-item {
-  @apply mb-2 tablet:mb-0 font-medium font-secondary text-xs tablet:text-sm desktop:text-base hover:text-purple-600 text-white py-2 transition-colors duration-300;
+  @apply mb-2 tablet:mb-0 font-medium font-secondary text-xs tablet:text-sm desktop:text-base hover:text-purple-600 dark:text-white py-2 transition-colors duration-300;
 }

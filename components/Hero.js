@@ -30,7 +30,7 @@ const Hero = ({ start, accent, end, text }) => {
             />
           </picture>
 
-          <div className="absolute -bottom-11 tablet:-bottom-80 desktop:-bottom-48 left-0 w-full h-60 bg-gradient-to-t from-slate-900 via-slate-900/90 to-transparent z-20"></div>
+          <div className="absolute -bottom-11 tablet:-bottom-80 desktop:-bottom-48 left-0 w-full h-60 bg-gradient-to-t dark:from-slate-900 from-white dark:via-slate-900/90 via-white/90 to-transparent z-20"></div>
 
           <div className="absolute left-0 -top-24 w-1/3 rounded-full h-full blur-2xl bg-gradient-to-b via-teal-300/30 from-purple-300/30 to-transparent"></div>
           <div className="absolute right-20 bottom-0 w-1/3 rounded-full h-full blur-2xl bg-gradient-to-t to-teal-300/30 from-purple-300/30 "></div>
