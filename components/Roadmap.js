@@ -62,9 +62,9 @@ const Roadmap = () => {
                 className="desktop:w-1/5 flex desktop:flex-col items-center"
               >
                 <div
-                  className={`relative z-10 drop-shadow-lg flex justify-center items-center rounded-full w-9 desktop:w-12 h-9 desktop:h-12 text-gray-800 text-base desktop:text-xl font-black desktop:bg-location${
+                  className={`relative z-10 drop-shadow-lg flex justify-center items-center rounded-full w-9 desktop:w-12 h-9 desktop:h-12 text-gray-800 text-base desktop:text-xl font-black bg-location${color} desktop:bg-location${
                     idx + 1
-                  } bg-location${color}`}
+                  }`}
                 >
                   {id}
                 </div>

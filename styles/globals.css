@@ -48,13 +48,13 @@
 }
 
 .footer-title {
-  @apply font-extrabold font-secondary text-2xl mb-3;
+  @apply font-extrabold font-secondary text-base tablet:text-xl desktop:text-2xl;
 }
 
 .footer-category {
-  @apply w-1/4;
+  @apply mb-4 tablet:mb-0 tablet:w-1/4;
 }
 
 .footer-category-item {
-  @apply font-medium font-secondary text-base;
+  @apply mb-2 tablet:mb-0 font-medium font-secondary text-xs tablet:text-sm desktop:text-base hover:text-purple-600 text-white py-2 transition-colors duration-300;
 }
