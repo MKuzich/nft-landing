@@ -58,7 +58,7 @@ const Roadmap = () => {
           src={roadMob}
           alt="Road"
         />
-        <div className="absolute desktop:top-10 bg-gradient-to-b desktop:bg-gradient-to-r from-white dark:from-slate-900 via-transparent to-white dark:to-slate-900 w-full h-road-picture-mobile desktop:h-96 z-10"></div>
+        <div className="absolute desktop:top-10 bg-gradient-to-b desktop:bg-gradient-to-r from-slate-50 via-transparent to-slate-50 dark:from-slate-900 dark:via-transparent dark:to-slate-900 w-full h-road-picture-mobile desktop:h-96 z-10"></div>
         <Container>
           <h2 className="text-center desktop:text-start font-extrabold text-2xl tablet:text-3xl desktop:text-titles mb-23 tablet:mb-22 desktop:mb-96 z-20 relative">
             Roadmap
@@ -76,7 +76,7 @@ const Roadmap = () => {
                 >
                   {id}
                 </div>
-                <div className="relative right-2 desktop:right-auto desktop:bottom-3 rounded-md shadow-lg bg-white dark:bg-slate-700 py-3 desktop:py-7 px-5 tablet:px-7 desktop:px-4 text-xs desktop:text-base">
+                <div className="relative right-2 desktop:right-auto desktop:bottom-3 rounded-md drop-shadow-xl bg-white dark:bg-slate-700 py-3 desktop:py-7 px-5 tablet:px-7 desktop:px-4 text-xs desktop:text-base">
                   <h3>{title}</h3>
                   <p>{text}</p>
                 </div>
