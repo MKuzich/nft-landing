@@ -60,7 +60,7 @@ const Header = ({ toggleDropDownMenu, toggleLanguageSelection, languages }) => {
             </svg>
           </button>
           <Link className="tablet:hidden" href="/">
-            <Image src={title} alt="Company title" width={120} height={22} />
+            <Image src={title} alt="Company title" />
           </Link>
 
           <div className="tablet:flex tablet:gap-8 desktop:gap-16 items-center hidden">
@@ -102,8 +102,8 @@ const Header = ({ toggleDropDownMenu, toggleLanguageSelection, languages }) => {
         </div>
 
         {isShowMenu && (
-          <div className="fixed px-4 pt-2 pb-14 top-0 left-0 z-20 w-screen h-screen bg-slate-700">
-            <div className="bg-slate-900 rounded-xl h-full flex flex-col items-center">
+          <div className="fixed px-4 pt-2 pb-14 top-0 left-0 z-20 w-screen h-screen dark:bg-slate-700">
+            <div className="bg-sky-50 dark:bg-slate-900 drop-shadow-2xl rounded-xl h-full flex flex-col items-center">
               <div className="flex items-center justify-between w-full pt-5 px-3 mb-12">
                 <button type="button" onClick={toggleMenuButton}>
                   <svg
@@ -174,9 +174,9 @@ const Header = ({ toggleDropDownMenu, toggleLanguageSelection, languages }) => {
                   </li>
                 ))}
               </ul>
+              <div className="absolute right-0 top-20 w-96 h-96 rounded-full blur-3xl bg-teal-300/20"></div>
+              <div className="absolute left-10 bottom-10 w-1/2 rounded-3xl h-1/2 blur-3xl bg-indigo-500/40"></div>
             </div>
-            <div className="absolute right-0 top-20 w-96 h-96 rounded-full blur-3xl bg-teal-300/20"></div>
-            <div className="absolute left-10 bottom-10 w-1/2 rounded-3xl h-1/2 blur-3xl bg-indigo-500/40"></div>
           </div>
         )}
       </Container>

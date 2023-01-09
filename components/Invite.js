@@ -20,7 +20,7 @@ const Invite = ({
             <h2
               className={`${
                 picOrder === 4 && "mb-6"
-              } tablet:mb-8 desktop:mb-12 font-extrabold text-2xl tablet:text-3xl desktop:text-titles desktop:mp-12 inline-block desktop:w-8/12 text-center`}
+              } tablet:mb-8 desktop:mb-12 relative z-20 font-extrabold text-2xl tablet:text-3xl desktop:text-titles desktop:mp-12 inline-block desktop:w-8/12 text-center`}
             >
               {title}
             </h2>
@@ -63,11 +63,9 @@ const Invite = ({
                 </h2>
               )}
               <p
-                className={`${
-                  picOrder === 2 && "mb-6"
-                } tablet:mb-0 flex text-center ${
+                className={`${picOrder === 2 && "mb-6"} tablet:mb-0 flex text-${
                   type === "full-centered" ? "text-center" : "start"
-                } order-3 tablet:w-5/6 text-sm tablet:text-base desktop:text-lg`}
+                } order-3 relative z-40 tablet:w-5/6 text-sm tablet:text-base desktop:text-lg`}
               >
                 {text}
               </p>

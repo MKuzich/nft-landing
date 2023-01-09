@@ -35,6 +35,9 @@ module.exports = {
         22: "5.5rem",
         23: "5.825rem",
       },
+      rotate: {
+        18: "18deg",
+      },
     },
     screens: {
       tablet: "768px",

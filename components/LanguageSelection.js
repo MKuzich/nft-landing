@@ -8,7 +8,7 @@ const LanguageSelection = ({ toggleLanguageSelection, languages }) => {
 
   return (
     <div className="drop-down-language">
-      <div className="bg-slate-800 w-7 h-7 rotate-45 hidden tablet:block absolute -top-2 left-7 rounded-sm"></div>
+      <div className="bg-sky-50 dark:bg-slate-800 w-7 h-7 rotate-45 hidden tablet:block absolute -top-2 left-7 rounded-sm"></div>
       <ul className="flex flex-col gap-7">
         {languages.map(({ title, flag }) => (
           <li key={`${title}-language-drop-down`} className="flex h-fit">

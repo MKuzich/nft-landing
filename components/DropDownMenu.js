@@ -19,7 +19,6 @@ const navigation = [
 const DropDownMenu = ({ toggleDropDownMenu }) => {
   return (
     <div id="drop-down-products" className="drop-down-menu">
-      <div className="bg-slate-800 w-7 h-7 rotate-45 hidden tablet:block absolute -top-2 left-10 rounded-sm"></div>
       <ul className="grid grid-cols-2 gap-2 w-full">
         {navigation.map(({ id, title, path, icon }) => (
           <li key={`${id}-drop-down`} className="mb-2 tablet:mb-0">
@@ -28,13 +27,13 @@ const DropDownMenu = ({ toggleDropDownMenu }) => {
               href={path}
               onClick={toggleDropDownMenu}
             >
-              <Image src={icon} alt={title} width={17} height={24} />
-
+              <Image src={icon} alt={title} />
               {title}
             </Link>
           </li>
         ))}
       </ul>
+      <div className=" bg-sky-50 dark:bg-slate-800 w-7 h-7 rotate-45 hidden tablet:block absolute -top-2 left-10 rounded-sm"></div>
     </div>
   );
 };
