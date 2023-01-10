@@ -32,6 +32,7 @@ module.exports = {
         "desktop-language": "49.625rem",
         "road-mobile": "674px",
         "road-picture-mobile": "594px",
+        label: "2.625rem",
         22: "5.5rem",
         23: "5.825rem",
         35: "8.625rem",

@@ -60,11 +60,11 @@
 }
 
 .plans-item {
-  @apply flex flex-col items-center relative w-11/12 tablet:w-80 desktop:w-2/5 text-base dark:bg-slate-700 rounded-xl pt-14 pb-7 px-7 desktop:pb-9 desktop:px-9;
+  @apply flex flex-col items-center border dark:border-0 drop-shadow-xl relative w-11/12 tablet:w-80 desktop:w-2/5 text-base bg-slate-100 dark:bg-slate-700 rounded-xl pt-14 pb-7 px-7 desktop:pb-9 desktop:px-9;
 }
 
 .plans-item-label {
-  @apply absolute text-slate-900 left-1/2 -top-6 -translate-x-16 w-32 h-12 font-extrabold text-base flex justify-center items-center bg-gradient-to-r from-teal-400 to-indigo-400 rounded-r-lg rounded-b-lg;
+  @apply absolute text-slate-900 left-1/2 -top-6 -translate-x-16 w-32 h-12 font-extrabold text-base flex justify-center items-center bg-gradient-to-r from-teal-400 to-indigo-400 rounded-lg;
 }
 
 .plan-list {
@@ -76,5 +76,5 @@
 }
 
 .plan-note {
-  @apply absolute text-xs odd:-bottom-7 even:-bottom-10;
+  @apply absolute text-xs odd:-bottom-9 even:-bottom-14 w-full text-start;
 }

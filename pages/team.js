@@ -6,6 +6,18 @@ import Plans from "../components/Plans";
 import FrequentlyAskedQuestions from "../components/FrequentlyAskedQuestions";
 import ContactForm from "../components/ContactForm";
 import Subscribe from "../components/Subscribe";
+import products from "../public/products.png";
+import productsMob from "../public/products-mob.png";
+import statistic from "../public/statistic.png";
+import statisticMob from "../public/statistic-mob.png";
+import dashboard from "../public/dashboard.png";
+import dashboardMob from "../public/dashboard-mob.png";
+import charts from "../public/charts.png";
+import chartsMob from "../public/charts-mob.png";
+import phone from "../public/phone.png";
+import phoneMob from "../public/phone-mob.png";
+import phoneAndCards from "../public/phone-and-cards.png";
+import phoneAndCardsMob from "../public/phone-and-cards-mob.png";
 
 const scope = [
   "White-label Web App codebase access*",
@@ -18,66 +30,73 @@ const scope = [
 ];
 
 const notes = [
-  "+ active profiles fees**",
-  "*Codebase access is provided under the Gopop.me White-label Software License",
-  "**&dollar;1 /mo per additional profile",
+  "**Codebase access is provided under the Gopop.me White-label Software License",
+  "***$1 /mo per additional profile",
 ];
 
 const Team = () => (
   <>
     <Hero
-      title="Experience effortless team management!"
-      text="Discover all the advantages that come with it"
+      path={products}
+      pathMob={productsMob}
+      imgPosition="bottom-14 tablet:-bottom-64 desktop:-bottom-24 left-auto right-auto tablet:-right-28 desktop:-right-3"
+      start="Experience effortless "
+      accent="team"
+      end=" management!"
+      text="Discover all the advantages that come with it."
     />
     <Benefits />
     <Invite
-      path="/"
+      path={statistic}
+      pathMob={statisticMob}
       title="Customize everything to fit your team - all under your brand!"
       text="Make managing your team easier than ever with a customizable dashboard - all in one place! Discover our white label CRM system for teams and businesses that includes powerful statistics, social network capabilities and customizable features to fit the specific needs of your team. This offers the flexibility and convenience of a powerful CRM system without having to build it from scratch."
       btnTxt="Get started"
-      width={923}
-      height={555}
+      type="center"
+      imgPosition="left-0 top-3"
     />
     <Invite
-      path="/"
+      path={dashboard}
+      pathMob={dashboardMob}
       title="Manage your team with one dashboard."
       text="Our white label CRM system is a powerful and customizable solution for businesses of all sizes. It features a range of customizable features to help companies manage their team, contacts and customer relationships. With in-depth reporting and analytics capabilities, this system can help businesses make informed decisions and organize their team better."
       btnTxt="Get started"
-      width={1024}
-      height={615}
+      imgPosition="right-10 -top-14"
     />
     <Invite
-      path="/"
+      path={charts}
+      pathMob={chartsMob}
       title="Get powerful statistics and insight, all in one place."
       text="Having statistical data for managing your team's digital products and interactions is incredibly beneficial. It allows you to track and measure progress, quickly identify patterns and trends, and make informed decisions about how to best manage your business."
       btnTxt="Get started"
-      width={452}
-      height={283}
+      type="center"
+      imgPosition="left-52 top-40"
     />
     <Invite
-      path="/"
+      path={phone}
+      pathMob={phoneMob}
       title="Make team interactions and cooperation easier than ever."
       text="Introducing a social network system for your  team can offer many benefits, such as increased collaboration, improved communication, and increased engagement. By having a central place for employees to interact and share ideas, it can foster creativity and help build relationships."
       btnTxt="Get started"
-      width={586}
-      height={392}
+      imgPosition="right-56 top-24"
     />
     <Invite
-      path="/"
+      path={phoneAndCards}
+      pathMob={phoneAndCardsMob}
       title="Get your customized NFC cards and make networking easier."
       text="Get your team NFC cards and start sharing your business’ information easier and smarter. Stand out with a customizable design, include your brand identity, and keep your contact information up-to-date and organized."
       btnTxt="Get started"
-      width={780}
-      height={520}
+      type="right"
+      imgPosition="left-20 top-0"
     />
     <Card text="We plant a tree for each NFC card!" />
     <Invite
-      path="/"
+      path={charts}
+      pathMob={chartsMob}
       title="Promote your business and reach premium audience"
       text="Research indicates that people who use ride-sharing services and taxis tend to have a higher level of buying power than other demographic segments. Utilize in-car advertising to communicate your message to this audience, who are ready to interact. Visualizing your target audience is only part of the equation; take the opportunity to reach a higher tier of customers."
       btnTxt="Get started"
-      width={452}
-      height={283}
+      imgPosition="right-52 top-40"
     />
     <Plans
       title="team"

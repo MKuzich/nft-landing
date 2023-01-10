@@ -76,7 +76,9 @@ const Plans = ({
                     + active profiles fees*
                   </span>
                   {notes.map((itm, idx) => (
-                    <span key={`${idx}-${firstType}`}>{itm}</span>
+                    <span key={`${idx}-${firstType}`} className="plan-note">
+                      {itm}
+                    </span>
                   ))}
                 </>
               )}
@@ -115,10 +117,7 @@ const Plans = ({
                 + active profiles fees*
               </span>
               {notes.map((itm, idx) => (
-                <span
-                  key={`${idx}-${secondType}`}
-                  className="plan-note bottom-0"
-                >
+                <span key={`${idx}-${secondType}`} className="plan-note">
                   {itm}
                 </span>
               ))}
@@ -128,8 +127,8 @@ const Plans = ({
             Get started
           </button>
         </div>
-        <div className="bg-teal-700 w-7 h-7 rotate-18 hidden tablet:block absolute tablet:top-38 tablet:left-35 desktop:top-57 desktop:left-97"></div>
-        <div className="bg-teal-700 w-7 h-7 rotate-18 hidden tablet:block absolute tablet:top-38 tablet:right-62 desktop:top-57 desktop:right-99"></div>
+        {/* <div className="bg-teal-700 w-7 h-7 rotate-18 hidden tablet:block absolute tablet:top-38 tablet:left-35 desktop:top-57 desktop:left-97"></div>
+        <div className="bg-teal-700 w-7 h-7 rotate-18 hidden tablet:block absolute tablet:top-38 tablet:right-62 desktop:top-57 desktop:right-99"></div> */}
         <div className="absolute left-1/2 -translate-x-1/2 bottom-48 w-1/3 rounded-full h-1/2 blur-3xl bg-gradient-to-b from-teal-300/40 to-purple-400/40"></div>
       </Container>
     </section>

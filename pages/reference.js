@@ -14,6 +14,8 @@ import phoneAndCards from "../public/phone-and-cards.png";
 import phoneAndCardsMob from "../public/phone-and-cards-mob.png";
 import phonePart from "../public/phone-part.png";
 import phonePartMob from "../public/phone-part-mob.png";
+import clientsPhones from "../public/clients-phones.png";
+import clientPhonesMobile from "../public/clients-phones-mob.png";
 
 const scope = [
   "1 Profile included",
@@ -30,6 +32,8 @@ const Reference = () => {
   return (
     <>
       <Hero
+        path={clientsPhones}
+        pathMob={clientPhonesMobile}
         start="Create Your "
         accent="Digital"
         end=" Business Page. Everything in just one link!"

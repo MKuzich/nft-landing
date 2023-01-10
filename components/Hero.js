@@ -1,9 +1,14 @@
-import Image from "next/image";
 import Container from "./Container";
-import clientsPhones from "../public/clients-phones.png";
-import clientPhonesMobile from "../public/clients-phones-mob.png";
 
-const Hero = ({ start, accent, end, text }) => {
+const Hero = ({
+  path,
+  pathMob,
+  imgPosition = "-bottom-11 tablet:-bottom-80 desktop:-bottom-48 left-auto right-auto tablet:right-0",
+  start,
+  accent,
+  end,
+  text,
+}) => {
   return (
     <section className="pt-9 tablet:pt-16 desktop:pt-24 pb-11 tablet:pb-80 desktop:pb-48">
       <Container>
@@ -15,16 +20,18 @@ const Hero = ({ start, accent, end, text }) => {
             </span>
             {end}
           </h1>
-          <p className="z-20 relative text-center tablet:text-start text-base tablet:text-xl desktop:text-2xl py-6 mb-80 tablet:mb-20">
+          <p className="z-20 relative text-center tablet:text-start text-base tablet:text-xl desktop:text-2xl py-6 mb-80 tablet:mb-20 desktop:w-5/12">
             {text}
           </p>
           <button className="gradient-btn" type="button">
             Get started for free
           </button>
-          <picture className="absolute tablet:w-11/12 desktop:w-auto -bottom-11 tablet:-bottom-80 desktop:-bottom-48 left-auto right-auto tablet:right-0 z-10 pointer-events-none">
-            <source srcSet={clientsPhones.src} media="(min-width: 768px)" />
+          <picture
+            className={`absolute tablet:w-11/12 desktop:w-auto z-10 pointer-events-none ${imgPosition}`}
+          >
+            <source srcSet={path.src} media="(min-width: 768px)" />
             <img
-              src={clientPhonesMobile.src}
+              src={pathMob.src}
               alt="Clients"
               className="object-none tablet:object-contain"
             />
