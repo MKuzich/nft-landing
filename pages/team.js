@@ -54,7 +54,10 @@ const Team = () => (
       btnTxt="Get started"
       type="center"
       imgPosition="left-0 top-3"
-    />
+    >
+      <div className="absolute left-60 top-24 w-1/4 rounded-full h-2/3 blur-3xl bg-gradient-to-t from-teal-400/40 to-purple-500/40"></div>
+      <div className="absolute -rotate-12 -right-20 -bottom-24 w-1/2 rounded-full h-2/3 blur-3xl bg-indigo-400/30"></div>
+    </Invite>
     <Invite
       path={dashboard}
       pathMob={dashboardMob}
@@ -62,7 +65,10 @@ const Team = () => (
       text="Our white label CRM system is a powerful and customizable solution for businesses of all sizes. It features a range of customizable features to help companies manage their team, contacts and customer relationships. With in-depth reporting and analytics capabilities, this system can help businesses make informed decisions and organize their team better."
       btnTxt="Get started"
       imgPosition="right-10 -top-14"
-    />
+    >
+      <div className="absolute right-60 top-24 w-1/3 rounded-full h-2/3 blur-3xl bg-teal-400/40"></div>
+      <div className="absolute rotate-12 -left-20 -bottom-24 w-1/2 rounded-full h-2/3 blur-3xl bg-indigo-400/30"></div>
+    </Invite>
     <Invite
       path={charts}
       pathMob={chartsMob}
@@ -71,7 +77,9 @@ const Team = () => (
       btnTxt="Get started"
       type="center"
       imgPosition="left-52 top-40"
-    />
+    >
+      <div className="absolute left-52 top-36 w-1/3 rounded-full h-2/3 blur-3xl bg-teal-300/40"></div>
+    </Invite>
     <Invite
       path={phone}
       pathMob={phoneMob}
@@ -79,7 +87,10 @@ const Team = () => (
       text="Introducing a social network system for your  team can offer many benefits, such as increased collaboration, improved communication, and increased engagement. By having a central place for employees to interact and share ideas, it can foster creativity and help build relationships."
       btnTxt="Get started"
       imgPosition="right-56 top-24"
-    />
+    >
+      <div className="absolute right-60 top-24 w-1/4 rounded-full h-2/3 blur-3xl bg-gradient-to-tl from-teal-400/40 via-teal-300/30 to-purple-500/40"></div>
+      <div className="absolute -rotate-12 -right-20 -bottom-24 w-1/3 rounded-full h-2/3 blur-3xl bg-indigo-400/30"></div>
+    </Invite>
     <Invite
       path={phoneAndCards}
       pathMob={phoneAndCardsMob}
@@ -88,7 +99,9 @@ const Team = () => (
       btnTxt="Get started"
       type="right"
       imgPosition="left-20 top-0"
-    />
+    >
+      <div className="absolute left-72 top-24 w-1/4 rounded-full h-3/4 blur-3xl bg-gradient-to-b from-teal-400/40 to-purple-500/40"></div>
+    </Invite>
     <Card text="We plant a tree for each NFC card!" />
     <Invite
       path={charts}
@@ -97,7 +110,9 @@ const Team = () => (
       text="Research indicates that people who use ride-sharing services and taxis tend to have a higher level of buying power than other demographic segments. Utilize in-car advertising to communicate your message to this audience, who are ready to interact. Visualizing your target audience is only part of the equation; take the opportunity to reach a higher tier of customers."
       btnTxt="Get started"
       imgPosition="right-52 top-40"
-    />
+    >
+      <div className="absolute -right-40 -top-40 w-1/3 rounded-full h-1/2 blur-3xl bg-gradient-to-l from-teal-300/40 to-purple-400/40"></div>
+    </Invite>
     <Plans
       title="team"
       scope={scope}

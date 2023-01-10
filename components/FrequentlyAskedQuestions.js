@@ -3,20 +3,25 @@ import Question from "./Question";
 
 const questions = [
   {
-    title: "Question 1",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "Why to choose us?",
+    text: "Our interface is simple and easy to use so you can create your digital card quickly. There is no need for coding or design skills, just upload your photo, logo and information, and you will have a professional looking digital card, fully adjusted to all devices.",
   },
   {
-    title: "Question 2",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "How much does it cost?",
+    text: "It's completely free. You can create your card and use it immediately. When you are ready, you can upgrade to enjoy the additional features!",
   },
   {
-    title: "Question 3",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "How many profiles can I register under my account?",
+    text: "It's completely free. You can create your card and use it immediately. When you are ready, you can upgrade to enjoy the additional features!",
   },
   {
-    title: "Question 4",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title:
+      "I am not a designer. Will I have to hire a professional to make my card?",
+    text: "Our solution is designed to suit anyone. You dont need to have any design skills, the unique interface is straightforward and user friendly.You can have your card ready in just five minutes.",
+  },
+  {
+    title: "Can I keep updating my card myself?",
+    text: "Yes, you can keep editing and work on your card anytime from anywhere!",
   },
 ];
 
