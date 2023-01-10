@@ -58,3 +58,23 @@
 .footer-category-item {
   @apply mb-2 tablet:mb-0 font-medium font-secondary text-xs tablet:text-sm desktop:text-base hover:text-purple-600 dark:text-white py-2 transition-colors duration-300;
 }
+
+.plans-item {
+  @apply flex flex-col items-center relative w-11/12 tablet:w-80 desktop:w-2/5 text-base dark:bg-slate-700 rounded-xl pt-14 pb-7 px-7 desktop:pb-9 desktop:px-9;
+}
+
+.plans-item-label {
+  @apply absolute text-slate-900 left-1/2 -top-6 -translate-x-16 w-32 h-12 font-extrabold text-base flex justify-center items-center bg-gradient-to-r from-teal-400 to-indigo-400 rounded-r-lg rounded-b-lg;
+}
+
+.plan-list {
+  @apply flex flex-col gap-2 desktop:gap-3 mb-6 desktop:mb-7 w-full;
+}
+
+.plan-item {
+  @apply flex items-center text-xs desktop:text-base gap-3 tablet:gap-5 desktop:gap-8;
+}
+
+.plan-note {
+  @apply absolute text-xs odd:-bottom-7 even:-bottom-10;
+}

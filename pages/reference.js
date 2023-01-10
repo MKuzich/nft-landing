@@ -24,10 +24,7 @@ const scope = [
   "Unblock 4 additional Profiles",
 ];
 
-const notes = [
-  "+ active profiles fees*",
-  "*&dollar;1 /mo per additional profile",
-];
+const notes = ["*$1 /mo per additional profile"];
 
 const Reference = () => {
   return (
@@ -79,7 +76,7 @@ const Reference = () => {
         imgPosition="right-80 top-0"
       >
         <div className="absolute -right-28 -top-48 w-1/3 rounded-full h-full blur-3xl bg-gradient-to-l from-teal-400/40 to-purple-500/40"></div>
-        <div className="hidden absolute z-20 right-0 bottom-20 w-2/3 h-28 tablet:right-14 tablet:-bottom-10 tablet:w-80 tablet:h-28 desktop:right-72 desktop:-bottom-10 -rotate-18 desktop:w-96 desktop:h-48 bg-gradient-to-t dark:from-slate-900 from-slate-50 dark:via-slate-900 via-slate-50/90 to-transparent"></div>
+        <div className="hidden tablet:block absolute z-20 right-0 bottom-20 w-2/3 h-28 tablet:right-14 tablet:-bottom-10 tablet:w-80 tablet:h-28 desktop:right-72 desktop:-bottom-10 -rotate-18 desktop:w-96 desktop:h-48 bg-gradient-to-t dark:from-slate-900 from-slate-50 dark:via-slate-900 via-slate-50/90 to-transparent"></div>
       </Invite>
       <Plans
         title="GPM"

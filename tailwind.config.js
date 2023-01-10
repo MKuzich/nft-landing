@@ -34,6 +34,12 @@ module.exports = {
         "road-picture-mobile": "594px",
         22: "5.5rem",
         23: "5.825rem",
+        35: "8.625rem",
+        38: "9.5rem",
+        57: "14.125rem",
+        62: "15.625rem",
+        97: "26.1rem",
+        99: "33.1rem",
       },
       rotate: {
         18: "18deg",
