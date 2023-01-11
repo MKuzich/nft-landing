@@ -6,6 +6,7 @@ import DropDownMenu from "./DropDownMenu";
 import LanguageSelection from "./LanguageSelection";
 import Modal from "./Modal";
 import RegisterForm from "./RegisterForm";
+import LoginForm from "./LoginForm";
 import english from "../public/english.png";
 import spanish from "../public/spanish.png";
 import french from "../public/french.png";
@@ -19,7 +20,8 @@ const languages = [
 const Layout = ({ children }) => {
   const [isShowDropDownMenu, setIsShowDropDownMenu] = useState(false);
   const [isShowLanguageSelection, setIsShowLanguageSelection] = useState(false);
-  const [isOpenModal, setIsOpenModal] = useState(true);
+  const [isOpenModal, setIsOpenModal] = useState(false);
+  const [formType, setFormType] = useState(null);
 
   const toggleDropDownMenu = () => {
     setIsShowDropDownMenu(!isShowDropDownMenu);
@@ -50,6 +52,8 @@ const Layout = ({ children }) => {
           toggleDropDownMenu={toggleDropDownMenu}
           toggleLanguageSelection={toggleLanguageSelection}
           languages={languages}
+          toggleModal={toggleModal}
+          setFormType={setFormType}
         />
         {children}
         <Footer />
@@ -64,7 +68,8 @@ const Layout = ({ children }) => {
         )}
         {isOpenModal && (
           <Modal toggleModal={toggleModal}>
-            <RegisterForm />
+            {formType === "register" && <RegisterForm />}
+            {formType === "login" && <LoginForm />}
           </Modal>
         )}
       </div>

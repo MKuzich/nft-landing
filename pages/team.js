@@ -4,7 +4,7 @@ import Invite from "../components/Invite";
 import Card from "../components/Card";
 import Plans from "../components/Plans";
 import FrequentlyAskedQuestions from "../components/FrequentlyAskedQuestions";
-import ContactForm from "../components/ContactForm";
+import ContactSection from "../components/ContactSection";
 import Subscribe from "../components/Subscribe";
 import products from "../public/products.png";
 import productsMob from "../public/products-mob.png";
@@ -123,7 +123,7 @@ const Team = () => (
       notes={notes}
     />
     <FrequentlyAskedQuestions />
-    <ContactForm />
+    <ContactSection />
     <Subscribe />
   </>
 );

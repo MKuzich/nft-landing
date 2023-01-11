@@ -3,7 +3,7 @@ import Invite from "../components/Invite";
 import Card from "../components/Card";
 import Roadmap from "../components/Roadmap";
 import FrequentlyAskedQuestions from "../components/FrequentlyAskedQuestions";
-import ContactForm from "../components/ContactForm";
+import ContactSection from "../components/ContactSection";
 import Subscribe from "../components/Subscribe";
 import threePhones from "../public/three-phones.png";
 import threePhonesMob from "../public/three-phones-mob.png";
@@ -97,7 +97,7 @@ Discover our white label CRM system for teams and companies that includes powerf
       />
       <Roadmap />
       <FrequentlyAskedQuestions />
-      <ContactForm />
+      <ContactSection />
       <Subscribe />
     </>
   );

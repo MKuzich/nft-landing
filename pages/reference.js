@@ -3,7 +3,7 @@ import Benefits from "../components/Benefits";
 import Invite from "../components/Invite";
 import Card from "../components/Card";
 import FrequentlyAskedQuestions from "../components/FrequentlyAskedQuestions";
-import ContactForm from "../components/ContactForm";
+import ContactSection from "../components/ContactSection";
 import Subscribe from "../components/Subscribe";
 import Plans from "../components/Plans";
 import phone from "../public/phone.png";
@@ -92,7 +92,7 @@ const Reference = () => {
         notes={notes}
       />
       <FrequentlyAskedQuestions />
-      <ContactForm />
+      <ContactSection />
       <Subscribe />
     </>
   );

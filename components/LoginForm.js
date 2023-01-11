@@ -1,4 +1,4 @@
-const ContactForm = () => {
+const LoginForm = () => {
   const onFormSubmitHandler = () => {};
   return (
     <form
@@ -11,21 +11,22 @@ const ContactForm = () => {
       <div className="flex flex-col items-center gap-5 tablet:gap-6 desktop:gap-8 w-full">
         <input
           className="invite-input"
-          type="text"
-          placeholder="Your Name/Company"
+          name="email"
+          type="email"
+          placeholder="Your Email"
         />
-        <input className="invite-input" type="email" placeholder="Your Email" />
-        <textarea
+        <input
           className="invite-input"
-          rows={5}
-          placeholder="Your Message"
+          name="password"
+          type="text"
+          placeholder="Your Password"
         />
       </div>
       <button className="gradient-btn" type="submit">
-        Contact me!
+        Sign In!
       </button>
     </form>
   );
 };
 
-export default ContactForm;
+export default LoginForm;

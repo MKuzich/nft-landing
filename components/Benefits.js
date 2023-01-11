@@ -37,7 +37,7 @@ const Benefits = () => {
         <ul className="relative z-30 flex flex-col tablet:flex-row items-center justify-center gap-5 tablet:gap-10 desktop:gap-20">
           {benefits.map(({ title, text }) => (
             <li
-              className="flex flex-col gap-2 items-center w-56 desktop:w-60 tablet:gap-3 drop-shadow-lg bg-slate-50/70 dark:bg-slate-700 rounded-xl py-4 px-1 tablet:p-5 desktop:p-6 bg-"
+              className="flex flex-col gap-2 items-center w-56 desktop:w-60 tablet:gap-3 drop-shadow-lg bg-slate-50/70 dark:bg-slate-700 rounded-xl py-4 px-1 tablet:p-5 desktop:p-6"
               key={title}
             >
               <Image

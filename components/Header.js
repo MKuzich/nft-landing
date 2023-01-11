@@ -9,7 +9,13 @@ import title from "../public/title.png";
 import NavBar from "./NavBar";
 import Container from "./Container";
 
-const Header = ({ toggleDropDownMenu, toggleLanguageSelection, languages }) => {
+const Header = ({
+  toggleDropDownMenu,
+  toggleLanguageSelection,
+  languages,
+  toggleModal,
+  setFormType,
+}) => {
   const [isDark, setIsDark] = useState(true);
   const [isShowMenu, setIsShowMenu] = useState(false);
 
@@ -30,6 +36,11 @@ const Header = ({ toggleDropDownMenu, toggleLanguageSelection, languages }) => {
   };
 
   const onLanguageClick = () => {};
+
+  const openModalWindow = (formType) => {
+    setFormType(formType);
+    toggleModal();
+  };
 
   return (
     <header
@@ -91,10 +102,18 @@ const Header = ({ toggleDropDownMenu, toggleLanguageSelection, languages }) => {
             </button>
 
             <div className="tablet:flex gap-4 hidden">
-              <button className="header-btn" type="button">
+              <button
+                onClick={() => openModalWindow("login")}
+                className="header-btn"
+                type="button"
+              >
                 Sign in
               </button>
-              <button className="header-gradient-btn" type="button">
+              <button
+                onClick={() => openModalWindow("register")}
+                className="header-gradient-btn"
+                type="button"
+              >
                 Register
               </button>
             </div>
@@ -146,10 +165,18 @@ const Header = ({ toggleDropDownMenu, toggleLanguageSelection, languages }) => {
               <NavBar type="mobile" toggleMenuButton={toggleMenuButton} />
               <div className="flex gap-7 items-center mt-9">
                 <div className="flex gap-4">
-                  <button className="header-btn" type="button">
+                  <button
+                    onClick={() => openModalWindow("login")}
+                    className="header-btn"
+                    type="button"
+                  >
                     Sign in
                   </button>
-                  <button className="header-gradient-btn" type="button">
+                  <button
+                    onClick={() => openModalWindow("register")}
+                    className="header-gradient-btn"
+                    type="button"
+                  >
                     Register
                   </button>
                 </div>

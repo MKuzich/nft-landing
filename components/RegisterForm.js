@@ -1,6 +1,10 @@
 const RegisterForm = () => {
+  const onFormSubmitHandler = () => {};
   return (
-    <form className="w-full flex flex-col items-center gap-7 tablet:gap-10 desktop:gap-12 text-base">
+    <form
+      onSubmit={onFormSubmitHandler}
+      className="w-full flex flex-col items-center gap-7 tablet:gap-10 desktop:gap-12 text-base"
+    >
       <h2 className="font-extrabold text-2xl tablet:text-3xl desktop:text-titles">
         Sign up form
       </h2>
