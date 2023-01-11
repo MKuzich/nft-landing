@@ -41,6 +41,7 @@ module.exports = {
         62: "15.625rem",
         97: "26.1rem",
         99: "33.1rem",
+        100: "40rem",
       },
       rotate: {
         18: "18deg",

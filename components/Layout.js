@@ -4,6 +4,8 @@ import Footer from "./Footer";
 import Header from "./Header";
 import DropDownMenu from "./DropDownMenu";
 import LanguageSelection from "./LanguageSelection";
+import Modal from "./Modal";
+import RegisterForm from "./RegisterForm";
 import english from "../public/english.png";
 import spanish from "../public/spanish.png";
 import french from "../public/french.png";
@@ -17,6 +19,7 @@ const languages = [
 const Layout = ({ children }) => {
   const [isShowDropDownMenu, setIsShowDropDownMenu] = useState(false);
   const [isShowLanguageSelection, setIsShowLanguageSelection] = useState(false);
+  const [isOpenModal, setIsOpenModal] = useState(true);
 
   const toggleDropDownMenu = () => {
     setIsShowDropDownMenu(!isShowDropDownMenu);
@@ -26,6 +29,12 @@ const Layout = ({ children }) => {
   const toggleLanguageSelection = () => {
     setIsShowLanguageSelection(!isShowLanguageSelection);
     setIsShowDropDownMenu(false);
+  };
+
+  const toggleModal = () => {
+    setIsOpenModal(!isOpenModal);
+    const body = document.querySelector("body");
+    body.classList.toggle("overflow-hidden");
   };
 
   return (
@@ -52,6 +61,11 @@ const Layout = ({ children }) => {
             toggleLanguageSelection={toggleLanguageSelection}
             languages={languages}
           />
+        )}
+        {isOpenModal && (
+          <Modal toggleModal={toggleModal}>
+            <RegisterForm />
+          </Modal>
         )}
       </div>
     </>

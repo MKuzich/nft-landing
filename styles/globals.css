@@ -78,3 +78,7 @@
 .plan-note {
   @apply absolute text-xs odd:-bottom-9 even:-bottom-14 w-full text-start;
 }
+
+.backdrop {
+  @apply fixed top-0 left-0 w-screen h-screen overflow-hidden z-50 bg-sky-100/50 dark:bg-slate-600/50;
+}
