@@ -28,7 +28,7 @@ const scope = [
 
 const notes = ["*$1 /mo per additional profile"];
 
-const Reference = () => {
+const Reference = ({ openModalWindow }) => {
   return (
     <>
       <Hero
@@ -38,6 +38,7 @@ const Reference = () => {
         accent="Digital"
         end=" Business Page. Everything in just one link!"
         text="Discover all the advantages that come with it."
+        openModalWindow={openModalWindow}
       />
       <Benefits />
       <Invite
@@ -47,6 +48,7 @@ const Reference = () => {
         text="Enjoy a built-in social network exclusively for users, giving you the opportunity to connect with like-minded professionals end expand your network."
         type="right"
         imgPosition="left-32 top-0"
+        openModalWindow={openModalWindow}
       >
         <div className="absolute left-64 bottom-0 w-96 rounded-full h-96 blur-3xl bg-gradient-to-tl from-teal-300/40 to-purple-600/40"></div>
         <div className="absolute right-0 -bottom-40 w-2/3 h-full -rotate-12 blur-3xl bg-gradient-to-tl to-transparent from-indigo-300/30"></div>
@@ -57,6 +59,7 @@ const Reference = () => {
         title="Customize your profile at any time."
         text="The great thing about GPM.Link is that your business page is fully customizable. This means you can choose exactly what information you'd like to include, customize your page with an unique design to make it truly stand out. You have control over exactly how you present yourself to potential customers and contacts and you’re free to change it any time!"
         imgPosition="right-0 top-0"
+        openModalWindow={openModalWindow}
       >
         <div className="absolute left-0 -bottom-40 w-2/3 h-full rotate-12 blur-3xl bg-gradient-to-tl to-transparent from-indigo-300/30"></div>
       </Invite>
@@ -67,6 +70,7 @@ const Reference = () => {
         text="With an NFC card, you can easily share your business profile with potential customers. With just one tap, you instantly share your information with anyone. This is a great way to quickly and easily share your business profile, without the need for traditional methods like printed business cards."
         type="right"
         imgPosition="left-20 top-0"
+        openModalWindow={openModalWindow}
       >
         <div className="absolute left-56 bottom-0 w-1/3 rounded-full h-full blur-3xl bg-gradient-to-l from-teal-300/40 to-purple-600/40"></div>
       </Invite>
@@ -78,6 +82,7 @@ const Reference = () => {
         text="Create a profile for free, get your affiliate link and start sharing with friends and partners! Earn for each referral and subscription!"
         btnTxt="Get started"
         imgPosition="right-80 top-0"
+        openModalWindow={openModalWindow}
       >
         <div className="absolute -right-28 -top-48 w-1/3 rounded-full h-full blur-3xl bg-gradient-to-l from-teal-400/40 to-purple-500/40"></div>
         <div className="hidden tablet:block absolute z-20 right-0 bottom-20 w-2/3 h-28 tablet:right-14 tablet:-bottom-10 tablet:w-80 tablet:h-28 desktop:right-72 desktop:-bottom-10 -rotate-18 desktop:w-96 desktop:h-48 bg-gradient-to-t dark:from-slate-900 from-slate-50 dark:via-slate-900 via-slate-50/90 to-transparent"></div>

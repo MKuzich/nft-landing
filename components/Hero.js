@@ -8,6 +8,7 @@ const Hero = ({
   accent,
   end,
   text,
+  openModalWindow,
 }) => {
   return (
     <section className="pt-9 tablet:pt-16 desktop:pt-24 pb-11 tablet:pb-80 desktop:pb-48">
@@ -23,7 +24,11 @@ const Hero = ({
           <p className="z-20 relative text-center tablet:text-start text-base tablet:text-xl desktop:text-2xl py-6 mb-80 tablet:mb-20 desktop:w-5/12">
             {text}
           </p>
-          <button className="gradient-btn" type="button">
+          <button
+            onClick={openModalWindow}
+            className="gradient-btn"
+            type="button"
+          >
             Get started for free
           </button>
           <picture

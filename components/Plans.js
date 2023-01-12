@@ -56,7 +56,7 @@ const Plans = ({
                         />
                       </svg>
                     )}
-                    <p className={idx >= 3 && "text-slate-400"}>{itm}</p>
+                    <p className={idx >= 3 ? "text-slate-400" : ""}>{itm}</p>
                   </li>
                 ))}
               </ul>

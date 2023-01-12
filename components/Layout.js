@@ -7,6 +7,7 @@ import LanguageSelection from "./LanguageSelection";
 import Modal from "./Modal";
 import RegisterForm from "./RegisterForm";
 import LoginForm from "./LoginForm";
+import ContactForm from "./ContactForm";
 import english from "../public/english.png";
 import spanish from "../public/spanish.png";
 import french from "../public/french.png";
@@ -17,11 +18,15 @@ const languages = [
   { title: "spanish", flag: spanish },
 ];
 
-const Layout = ({ children }) => {
+const Layout = ({
+  children,
+  toggleModal,
+  setFormType,
+  isOpenModal,
+  formType,
+}) => {
   const [isShowDropDownMenu, setIsShowDropDownMenu] = useState(false);
   const [isShowLanguageSelection, setIsShowLanguageSelection] = useState(false);
-  const [isOpenModal, setIsOpenModal] = useState(false);
-  const [formType, setFormType] = useState(null);
 
   const toggleDropDownMenu = () => {
     setIsShowDropDownMenu(!isShowDropDownMenu);
@@ -31,12 +36,6 @@ const Layout = ({ children }) => {
   const toggleLanguageSelection = () => {
     setIsShowLanguageSelection(!isShowLanguageSelection);
     setIsShowDropDownMenu(false);
-  };
-
-  const toggleModal = () => {
-    setIsOpenModal(!isOpenModal);
-    const body = document.querySelector("body");
-    body.classList.toggle("overflow-hidden");
   };
 
   return (
@@ -70,6 +69,7 @@ const Layout = ({ children }) => {
           <Modal toggleModal={toggleModal}>
             {formType === "register" && <RegisterForm />}
             {formType === "login" && <LoginForm />}
+            {formType === "contact" && <ContactForm />}
           </Modal>
         )}
       </div>

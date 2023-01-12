@@ -10,6 +10,7 @@ const Invite = ({
   btnTxt = "Get started for free",
   type = "left",
   imgPosition,
+  openModalWindow,
   children,
 }) => {
   return (
@@ -82,7 +83,11 @@ const Invite = ({
                 src={pathMob}
                 alt={title}
               />
-              <button className="gradient-btn order-5" type="button">
+              <button
+                onClick={openModalWindow}
+                className="gradient-btn order-5"
+                type="button"
+              >
                 {btnTxt}
               </button>
             </div>

@@ -6,7 +6,7 @@ const ContactForm = () => {
       className="w-full flex flex-col items-center gap-7 tablet:gap-10 desktop:gap-12 text-base"
     >
       <h2 className="font-extrabold text-2xl tablet:text-3xl desktop:text-titles">
-        Log In form
+        Fill the form for contact
       </h2>
       <div className="flex flex-col items-center gap-5 tablet:gap-6 desktop:gap-8 w-full">
         <input
@@ -22,7 +22,7 @@ const ContactForm = () => {
         />
       </div>
       <button className="gradient-btn" type="submit">
-        Contact me!
+        Contact me !
       </button>
     </form>
   );
