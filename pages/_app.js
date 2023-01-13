@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Layout from "../components/Layout";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "../styles/globals.css";
 
 export default function App({ Component, pageProps }) {
@@ -18,15 +20,18 @@ export default function App({ Component, pageProps }) {
   };
 
   return (
-    <Layout
-      toggleModal={toggleModal}
-      setFormType={setFormType}
-      isOpenModal={isOpenModal}
-      formType={formType}
-    >
-      <main>
-        <Component openModalWindow={openModalWindow} {...pageProps} />
-      </main>
-    </Layout>
+    <>
+      <Layout
+        toggleModal={toggleModal}
+        setFormType={setFormType}
+        isOpenModal={isOpenModal}
+        formType={formType}
+      >
+        <main>
+          <Component openModalWindow={openModalWindow} {...pageProps} />
+        </main>
+      </Layout>
+      <ToastContainer />
+    </>
   );
 }
