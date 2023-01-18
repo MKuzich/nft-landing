@@ -67,9 +67,13 @@ const Layout = ({
         )}
         {isOpenModal && (
           <Modal toggleModal={toggleModal}>
-            {formType === "register" && <RegisterForm />}
-            {formType === "login" && <LoginForm />}
-            {formType === "contact" && <ContactForm />}
+            {formType === "register" && (
+              <RegisterForm toggleModal={toggleModal} />
+            )}
+            {formType === "login" && <LoginForm toggleModal={toggleModal} />}
+            {formType === "contact" && (
+              <ContactForm toggleModal={toggleModal} />
+            )}
           </Modal>
         )}
       </div>

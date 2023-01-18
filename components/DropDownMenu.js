@@ -6,10 +6,16 @@ import mallIcon from "../public/mall-icon.svg";
 import travelIcon from "../public/travel-icon.svg";
 import tokenIcon from "../public/token-icon.svg";
 import resellerIcon from "../public/reseller-icon.svg";
+import { toast } from "react-toastify";
 
 const navigation = [
   { id: 1, title: "GPM Link", path: "/reference", icon: linkIcon },
-  { id: 2, title: "GPM for Businesses and Teams", path: "/", icon: teamsIcon },
+  {
+    id: 2,
+    title: "GPM for Businesses and Teams",
+    path: "/team",
+    icon: teamsIcon,
+  },
   { id: 3, title: "GPM Mall", path: "/", icon: mallIcon },
   { id: 4, title: "GPM Travel", path: "/", icon: travelIcon },
   { id: 5, title: "GPM Token", path: "/", icon: tokenIcon },
@@ -25,7 +31,12 @@ const DropDownMenu = ({ toggleDropDownMenu }) => {
             <Link
               className="drop-down-link"
               href={path}
-              onClick={toggleDropDownMenu}
+              onClick={() => {
+                if (path === "/") {
+                  toast.info("Sorry, we waiting content for this page!");
+                }
+                toggleDropDownMenu();
+              }}
             >
               <Image src={icon} alt={title} />
               {title}

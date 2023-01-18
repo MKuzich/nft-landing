@@ -1,5 +1,12 @@
-const LoginForm = () => {
-  const onFormSubmitHandler = () => {};
+import { toast } from "react-toastify";
+
+const LoginForm = ({ toggleModal }) => {
+  const onFormSubmitHandler = (e) => {
+    e.preventDefault();
+    e.target.reset();
+    toast.info("Sorry, this function waiting for integration to domain!");
+    toggleModal();
+  };
   return (
     <form
       onSubmit={onFormSubmitHandler}

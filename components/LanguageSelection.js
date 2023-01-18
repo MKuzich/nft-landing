@@ -1,10 +1,14 @@
 import { useState } from "react";
 import Image from "next/image";
+import { toast } from "react-toastify";
 
 const LanguageSelection = ({ toggleLanguageSelection, languages }) => {
   const [language, setLanguage] = useState("english");
 
-  const onClickSelect = () => {};
+  const onClickSelect = () => {
+    toast.info("Sorry, we waiting for other languages!");
+    toggleLanguageSelection();
+  };
 
   return (
     <div className="drop-down-language">
@@ -12,7 +16,11 @@ const LanguageSelection = ({ toggleLanguageSelection, languages }) => {
       <ul className="flex flex-col gap-7">
         {languages.map(({ title, flag }) => (
           <li key={`${title}-language-drop-down`} className="flex h-fit">
-            <button type="button" className="rounded-full overflow-hidden">
+            <button
+              onClick={onClickSelect}
+              type="button"
+              className="rounded-full overflow-hidden"
+            >
               <Image
                 src={flag}
                 alt={`${title} language`}

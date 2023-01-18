@@ -1,10 +1,19 @@
 import Container from "./Container";
+import { toast } from "react-toastify";
 
 const ContactSection = () => {
+  const onFormSubmitHandler = (e) => {
+    e.preventDefault();
+    e.target.reset();
+    toast.info("Sorry, this function waiting for integration to domain!");
+  };
   return (
     <section className="py-10 tablet:py-16 desktop:py-20">
       <Container>
-        <form className="flex flex-col items-center gap-11 desktop:gap-14 text-base relative z-20">
+        <form
+          onSubmit={onFormSubmitHandler}
+          className="flex flex-col items-center gap-11 desktop:gap-14 text-base relative z-20"
+        >
           <h2 className="font-extrabold text-2xl tablet:text-3xl desktop:text-titles">
             Contact us
           </h2>

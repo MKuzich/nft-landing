@@ -8,6 +8,7 @@ import english from "../public/english.png";
 import title from "../public/title.png";
 import NavBar from "./NavBar";
 import Container from "./Container";
+import { toast } from "react-toastify";
 
 const Header = ({
   toggleDropDownMenu,
@@ -35,7 +36,9 @@ const Header = ({
     body.classList.toggle("overflow-hidden");
   };
 
-  const onLanguageClick = () => {};
+  const onLanguageClick = () => {
+    toast.info("Sorry, we waiting for other languages!");
+  };
 
   const openModalWindow = (formType) => {
     setFormType(formType);

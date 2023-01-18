@@ -4,6 +4,7 @@ import Container from "./Container";
 import english from "../public/english.png";
 import { useMediaQuery } from "../hooks/useMediaQuery";
 import OpenMoreBtn from "./OpenMoreBtn";
+import { toast } from "react-toastify";
 
 const products = [
   { title: "GPM Link", path: "/" },
@@ -29,6 +30,10 @@ const Footer = () => {
     setIsOpenApp(isTablet);
   }, [isTablet]);
 
+  const onClickSelect = () => {
+    toast.info("Sorry, we waiting for other languages!");
+  };
+
   return (
     <footer className="py-10 tablet:py-16 desktop:py-20">
       <Container>
@@ -45,7 +50,11 @@ const Footer = () => {
             </div>
             {isOpenLanguage && (
               <div className="flex items-center gap-3">
-                <button className="rounded-full overflow-hidden" type="button">
+                <button
+                  onClick={onClickSelect}
+                  className="rounded-full overflow-hidden"
+                  type="button"
+                >
                   <Image src={english} alt="language" width={33} height={24} />
                 </button>
                 <span className="font-medium font-secondary text-xs tablet:text-sm desktop:text-base">
